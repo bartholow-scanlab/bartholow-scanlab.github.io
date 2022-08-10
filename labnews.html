@@ -1,0 +1,39 @@
+---
+layout: blog
+title: Lab News
+group: navigation
+tags : 
+author : 
+css: 
+js:
+keywords: 
+canonical: 
+---
+{% include JB/setup %}
+
+
+{% for post in site.posts %}
+	  <div class="blog-block post-content-area">
+	  
+	   {% if post.img %}	
+	   
+	          
+                <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}"
+                style="width: auto; height: auto;max-width: 20px;max-height: 10px">
+            
+            
+            
+	   {% endif %}	  
+            <div class="blog-post">
+		    
+		
+    		{{ post.date | date: "%B %Y" }}
+		
+		    
+              <h2> <a href="{{ BASE_PATH }}{{ post.url }}"> {{ post.title }}</a></h2>
+	      <p>{{ post.content }}</p>
+            </div>
+          </div>
+	  <div class="mb-60"></div>
+{% endfor %}
+
