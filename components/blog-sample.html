@@ -1,0 +1,110 @@
+---
+layout: index
+title: Blog samples
+tagline: 
+tags : 
+img : 
+img-mobile : 
+author : 
+css: 
+js:
+keywords: 
+canonical: 
+---
+{% include JB/setup %}
+
+  <div class="container">
+    <div class="page-header-title">
+      <h2 class="heading-title color-title text-center">Lab News</h2>
+    </div>
+  </div>
+
+
+  <!-- Blog content + sidebar -->
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9">
+          {% for post in site.posts %}
+          <div class="blog-block post-content-area">
+            {% if post.img %}
+            <img src="{{ post.img }}">
+            {% endif %}	  
+            <div class="blog-post">
+              {{ post.date | date: "%B %Y" }}
+               <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+               <p>{{ post.content }}</p>
+            </div>
+          </div>
+{% endfor %}	
+
+          <div class="mb-60"></div>
+
+        </div>
+
+        <!-- Blog sidebar area -->
+        <div class="col-sm-12 col-md-3">
+          <div class="blog-block about-sidebar-widget">
+            <img src="{{ BASE_PATH }}/assets/images/blog/author.jpg">
+            <h4>About Author</h4>
+            <p>Aenean vestibulum purus a nulla sollicitudin molestie. Maecenas bibendum erat in erat maximus, vel imperdiet leo mattis.</p>
+          </div>
+
+          <div class="mb-60"></div>
+
+          <div class="blog-block categories-sidebar-widget">
+            <h4>Categories</h4>
+            <div class="post-category">
+              <a href="#">Category 1 <span class="pull-right">(3)</span></a>
+            </div>
+
+            <div class="post-category">
+              <a href="#">Category 2 <span class="pull-right">(1)</span></a>
+            </div>
+
+            <div class="post-category">
+              <a href="#">Category 3 <span class="pull-right">(2)</span></a>
+            </div>
+
+            <div class="post-category">
+              <a href="#">Category 4 <span class="pull-right">(5)</span></a>
+            </div>
+
+            <div class="post-category">
+              <a href="#">Category 5 <span class="pull-right">(3)</span></a>
+            </div>
+          </div>
+
+          <div class="mb-60"></div>
+
+          <div class="blog-block blog-posts-widget">
+            <div class="widget-title">
+              <h4>Recent Posts</h4>
+            </div>
+            <div class="blog-posts-small">
+              <div class="blog-post-small first-post">
+                <img src="{{ BASE_PATH }}/assets/images/blog/thumb1.jpg">
+                <a href="#">Post #1</a>
+                <p>Posted on <a href="#" class="post-date">Sep. 03, 2016</a></p>
+              </div>
+              <div class="blog-post-small mid-post">
+                <img src="{{ BASE_PATH }}/assets/images/blog/thumb1.jpg">
+                <a href="#">Post #2</a>
+                <p>Posted on <a href="#" class="post-date">Sep. 01, 2016</a></p>
+              </div>
+              <div class="blog-post-small mid-post">
+                <img src="{{ BASE_PATH }}/assets/images/blog/thumb1.jpg">
+                <a href="#">Post #3</a>
+                <p>Posted on <a href="#" class="post-date">Aug. 19, 2016</a></p>
+              </div>
+              <div class="blog-post-small last-post">
+                <img src="{{ BASE_PATH }}/assets/images/blog/thumb1.jpg">
+                <a href="#">Post #4</a>
+                <p>Posted on <a href="#" class="post-date">Aug. 16, 2016</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

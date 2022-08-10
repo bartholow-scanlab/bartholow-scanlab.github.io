@@ -1,0 +1,63 @@
+            <div class="top-menu">
+              <p>
+                <span class="left">
+                  <a href=""><i class="fa fa-map-marker"></i>Columbia, Missouri 
+                  <i class="fa fa-mobile-phone"></i>+1 573 882 1944 
+                  <i class="fa fa-envelope"></i>mualcoholstudy@missouri.edu </a>
+              	</span>
+		 <span class="right">
+                  <a href="https://www.scanlab.page/assets/docs/pub/2020/Psychophysiology-2020-Gatzke%E2%80%90Kopp-SPR-statement-on-racial-justice.pdf"  target="_blank" rel="noopener noreferrer"> Lab’s stance on racial justice </a>
+              	</span>
+                <span class="right hidden-sm-down">                          
+                  {% if site.author.facebook %}<a href="https://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a>{% endif %}
+                  {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
+                  {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><i class="fa fa-linkedin"></i></a>{% endif %}
+                  {% if site.author.instagram %}<a href="https://www.instagram.com/{{ site.author.instagram }}/"><i class="fa fa-instagram"></i></a>{% endif %}                            
+              	</span>
+              </p>
+            </div>
+
+            <!-- navbar-default -->
+            <nav class="navbar navbar-toggleable-sm navbar-light bg-default">
+              <div class="container">
+                          <p class="text-xs"> <a class="navbar-brand" href="{{ BASE_PATH }}">SCANlab</a></p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+                  <ul class="navbar-nav">
+                    {% assign pages_list = site.pages %}
+                    {% assign group = 'navigation' %}
+                    {% include JB/pages_list %}     
+                        
+                        
+                        <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ BASE_PATH }}/publications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research and Publications</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/publications">Publications</a>
+                        <a class="dropdown-item" href="/research">Research Focus</a>
+                      </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ BASE_PATH }}/members" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Members</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/members">Members</a>
+                        <a class="dropdown-item" href="/jointhelab">Join the lab</a>
+                        <a class="dropdown-item" href="/network">SCANlab Network</a>
+                      </div>
+                    </li>      
+                              
+                              
+                       <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ BASE_PATH }}/research" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Participate in Research</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/recruiting">Studies Recruiting</a>
+                        <a class="dropdown-item" href="/EEG">EEG FAQ</a>
+                        <a class="dropdown-item" href="/directions">Directions to Lab</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>

@@ -1,0 +1,28 @@
+<!-- Post content+sidebar -->
+
+<div class="mb-60"></div>
+
+  <!-- Blog content + sidebar -->
+ <section id="post" class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9">
+          {% include ads-block.html %}
+          <div class="mb-60"></div>
+
+        
+              <h5> {{ page.date | date: "%B %Y" }} </h5> <br/>
+              <h3><strong>{{ page.title }}</strong></h3>
+              
+           {{ content }}
+           
+          
+           
+          <div class="mb-60"></div>
+
+         {% if page.img %}<figure>
+                <img class="resize" src="{{ BASE_PATH }}/assets/images/{{ page.img }}" alt="">
+              </figure>{% endif %}
+      </div>
+     </div>
+</section>
