@@ -28,7 +28,7 @@ At graduation, we celebrated the achievements of our research assistants Devon T
 
 * Starting in August 2022, **Mikayla Rodgers** will be joining the MU [Molecular Imaging and Theranostics Center](https://mitc.missouri.edu/) as a Research Technician where she will be working on creating an animal model for alpha emitting pharmaceuticals. 
 
-* In Fall 2022, **Cole Schilling** will start the Counseling MA program at the University of Missouri - Kansas City.
+* In Fall 2022, postbac **Cole Schilling, B.A.** will start the Counseling MA program at the University of Missouri - Kansas City.
 
 * Last but not least, we are very happy that **Emma G. Johnson** will continue to work as a Research Technician in the SCANlab this upcoming year while she is applying to Med School!
 
