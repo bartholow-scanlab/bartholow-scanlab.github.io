@@ -13,27 +13,29 @@
               </p>
             </div>
 
-            <!-- Light header -->
-        <header id="header-style-1">
-          <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">SCANlab</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="labnews.html">Lab news</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="research.html">Research</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="publications.html">Publications</a>
-                  </li>
-                  
-                  
-                  <li class="nav-item dropdown">
+            <!-- navbar-default -->
+            <nav class="navbar navbar-toggleable-sm navbar-light bg-default">
+              <div class="container">
+                          <p class="text-xs"> <a class="navbar-brand" href="{{ BASE_PATH }}">SCANlab</a></p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+                  <ul class="navbar-nav">
+                    {% assign pages_list = site.pages %}
+                    {% assign group = 'navigation' %}
+                    {% include JB/pages_list %}     
+                        
+                        
+                        <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ BASE_PATH }}/publications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research and Publications</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/publications">Publications</a>
+                        <a class="dropdown-item" href="/research">Research Focus</a>
+                      </div>
+                    </li> 
+                    
+                        <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="{{ BASE_PATH }}/members" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Members</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/members">Members</a>
@@ -51,27 +53,7 @@
                         <a class="dropdown-item" href="/directions">Directions to Lab</a>
                       </div>
                     </li>
-                    
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <div class="container">
-            <div class="header-caption">
-              <div class="row">
-                <div class="col-md-12 header-content">
-                  <h3 class="slide-title animated fadeInDown"><span class="text-primary">S</span>ocial <span class="text-primary">C</span>ognitive and <span class="text-primary">A</span>ddiction <span class="text-primary">N</span>euroscience <span class="text-primary">Lab</span></h3>
-                      <h5 class="slide-text animated fadeIn">Research in the SCANlab aims to understand the neural bases of motivation and cognitive control as applied to social cognition and addictive behaviors</h5>
-              
+                  </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <!-- Headers End -->
-      
-      
-      
-      
+            </nav>
