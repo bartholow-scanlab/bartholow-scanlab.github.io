@@ -6,7 +6,7 @@ Incremental version bumps that were not released publicly are nested where appro
 P.S. If there is a standard (popular) changelog format, please let me know.
 
 - **0.5.0 : 2016.01.17**
-   - **Bug fixes**
+   - **Bug fixes** 
    - Removed [FezVrasta/bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design) (no more needed)
    - Fixed `<hr>` duplication on index template
    - Removed unnecessary CSS and JS files
@@ -55,7 +55,7 @@ P.S. If there is a standard (popular) changelog format, please let me know.
     - 0.2.5 : @nolith Adds ability to load custom rake scripts. #33
     - 0.2.4 : @tommyblue Updated disqus comments provider to be compatible with posts imported from Wordpress. #47
 
-    - **Bug Fixes**
+    - **Bug Fixes** 
     - 0.2.3 : @3martini Adds Windows MSYS Support and error checks for git system calls. #40
     - 0.2.2 : @sstar Resolved an issue preventing disabling comments for individual pages #44
     - 0.2.1 : Resolve incorrect HOME\_PATH/BASE\_PATH settings
