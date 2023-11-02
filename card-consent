@@ -1,0 +1,34 @@
+---
+layout: index
+title: CARD
+---
+{% include JB/setup %}
+    <!-- Content Area Start -->
+        <div id="content">
+          <div class="container">
+	          <div class="page-header-title">
+		          <h2 class="heading-title text-center">Characterizing Alcohol Risks in Development (CARD)</h2>
+	          </div>
+
+
+      <br>
+      <hr>
+        <h4> CARD Study Informed Consent Forms </h4>
+              <a href=”assets/docs/other/Adult ICF.docx” target =”_blank” rel=”noopener noreferrer”> <button type="button" class="btn std-btn btn-common"><i class="fa fa-download icons" aria-hidden="true"></i>
+              Click here to view the Adult Consent Form.
+              </button> </a>
+
+           <div>
+                
+          <div>
+              <a href=”assets/docs/other/Teen_Parent ICF.docx” target =”_blank” rel=”noopener noreferrer”> <button type="button" class="btn std-btn btn-common"><i class="fa fa-download icons" aria-hidden="true"></i>
+              Click here to view the Teen and Parent/Guardian consent form.
+              </button> </a>
+          </div>
+
+          </div>
+     </br>
+      </hr>  
+  
+          </div>
+        </div>
